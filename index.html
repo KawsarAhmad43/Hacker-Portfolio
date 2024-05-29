@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacker's Portfolio</title>
+  <style>
+    /* Base styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #000;
+      color: #0f0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      border-bottom: 2px solid #0f0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #0f0;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f00;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .glass {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Terminal style */
+    .terminal {
+      border: 2px solid #0f0;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #000;
+      overflow: auto;
+      max-height: 300px;
+    }
+
+    .command {
+      color: #0f0;
+    }
+
+    .output {
+      color: #0f0;
+    }
+
+    /* Typing animation */
+    @keyframes typing {
+      0% {
+        border-right: 2px solid #0f0;
+      }
+      50% {
+        border-right: none;
+      }
+      100% {
+        border-right: 2px solid #0f0;
+      }
+    }
+
+    .typing-animation {
+      animation: typing 1s steps(20, end) infinite;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      nav ul {
+        display: block;
+        text-align: center;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span class="typing-animation">Kawsar Ahmad</span></h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="glass">
+      <h2>About Me</h2>
+      <div class="terminal">
+        <p><span class="command">root@hacker:</span> <span class="typing-animation">whoami</span></p>
+        <p><span class="output">I am a passionate hacker.</span></p>
+        <p><span class="command">root@hacker:</span> <span class="output">echo "I love to explore and hack systems."</span></p>
+      </div>
+    </section>
+
+    <section id="skills" class="glass">
+      <h2>Skills</h2>
+      <div class="terminal">
+        <p><span class="command">root@hacker:</span> <span class="typing-animation">cat skills.txt</span></p>
+        <p><span class="output">- Hacking</span></p>
+        <p><span class="output">- Programming</span></p>
+        <p><span class="output">- Cybersecurity</span></p>
+        <p><span class="output">- Network Security</span></p>
+        <p><span class="output">- Penetration Testing</span></p>
+      </div>
+    </section>
+
+    <section id="projects" class="glass">
+      <h2>Projects</h2>
+      <div class="terminal">
+        <p><span class="command">root@hacker:</span> <span class="typing-animation">ls projects</span></p>
+        <p><span class="output">- Project 1</span></p>
+        <p><span class="output">- Project 2</span></p>
+        <p><span class="output">- Project 3</span></p>
+      </div>
+    </section>
+
+    <section id="contact" class="glass">
+      <h2>Contact Me</h2>
+      <div class="terminal">
+        <p><span class="command">root@hacker:</span> <span class="typing-animation">echo "Contact: hacker@anonymous.com"</span></p>
+        <p><span class="output">Contact: hacker@anonymous.com</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p> &copy; 2024 Kawsar Ahmad - All rights reserved.</p>
+  </footer>
+</body>
+</html>
